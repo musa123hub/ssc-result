@@ -1,0 +1,1416 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>SSC Result 2026 | Bangladesh Education Board</title>
+
+
+<style>
+
+/* =========================
+   GLOBAL
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:
+    Arial,
+    "Noto Sans Bengali",
+    sans-serif;
+
+    background:#f3f6f8;
+
+    color:#1f2933;
+
+    min-height:100vh;
+}
+
+
+/* =========================
+   TOP BAR
+========================= */
+
+.top-bar{
+
+    background:#075c43;
+
+    color:white;
+
+    padding:9px 20px;
+
+    font-size:13px;
+}
+
+.top-bar-inner{
+
+    max-width:1150px;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header{
+
+    background:
+    linear-gradient(
+        135deg,
+        #087f5b,
+        #0b9b70
+    );
+
+    color:white;
+
+    padding:28px 20px;
+
+    box-shadow:
+    0 3px 12px
+    rgba(0,0,0,.15);
+}
+
+.header-inner{
+
+    max-width:1150px;
+
+    margin:auto;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+}
+
+.logo{
+
+    width:78px;
+
+    height:78px;
+
+    background:white;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:#087f5b;
+
+    font-size:21px;
+
+    font-weight:900;
+
+    box-shadow:
+    0 4px 15px
+    rgba(0,0,0,.2);
+}
+
+.header-text h1{
+
+    font-size:30px;
+
+    margin-bottom:7px;
+}
+
+.header-text p{
+
+    font-size:14px;
+
+    opacity:.95;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.nav{
+
+    background:white;
+
+    box-shadow:
+    0 2px 8px
+    rgba(0,0,0,.08);
+}
+
+.nav-inner{
+
+    max-width:1150px;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:35px;
+
+    padding:14px;
+}
+
+.nav a{
+
+    color:#333;
+
+    text-decoration:none;
+
+    font-size:14px;
+
+    font-weight:bold;
+
+}
+
+.nav a:hover{
+
+    color:#087f5b;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+.main{
+
+    max-width:1150px;
+
+    margin:35px auto;
+
+    padding:0 20px;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+
+    text-align:center;
+
+    margin-bottom:30px;
+}
+
+.hero h2{
+
+    color:#087f5b;
+
+    font-size:30px;
+
+    margin-bottom:8px;
+}
+
+.hero p{
+
+    color:#68737d;
+
+    font-size:15px;
+}
+
+
+/* =========================
+   CONTENT GRID
+========================= */
+
+.content{
+
+    display:grid;
+
+    grid-template-columns:
+    minmax(0,2fr)
+    minmax(280px,1fr);
+
+    gap:25px;
+
+    align-items:start;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.card{
+
+    background:white;
+
+    border-radius:14px;
+
+    overflow:hidden;
+
+    box-shadow:
+    0 6px 25px
+    rgba(0,0,0,.08);
+}
+
+.card-header{
+
+    background:#087f5b;
+
+    color:white;
+
+    padding:20px 25px;
+}
+
+.card-header h3{
+
+    font-size:21px;
+
+    margin-bottom:5px;
+}
+
+.card-header p{
+
+    font-size:13px;
+
+    opacity:.9;
+}
+
+.card-body{
+
+    padding:28px;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.form-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    1fr 1fr;
+
+    gap:20px;
+}
+
+.form-group{
+
+    margin-bottom:20px;
+}
+
+.form-group.full{
+
+    grid-column:
+    1 / -1;
+}
+
+label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-weight:bold;
+
+    font-size:14px;
+
+    color:#344054;
+}
+
+select,
+input{
+
+    width:100%;
+
+    height:52px;
+
+    border:1px solid #d0d5dd;
+
+    border-radius:8px;
+
+    background:white;
+
+    padding:0 15px;
+
+    font-size:15px;
+
+    outline:none;
+
+    transition:.2s;
+}
+
+select:focus,
+input:focus{
+
+    border-color:#087f5b;
+
+    box-shadow:
+    0 0 0 3px
+    rgba(8,127,91,.10);
+}
+
+
+/* =========================
+   SEARCH BUTTON
+========================= */
+
+.search-btn{
+
+    width:100%;
+
+    height:54px;
+
+    border:0;
+
+    border-radius:8px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #087f5b,
+        #0b9b70
+    );
+
+    color:white;
+
+    font-size:17px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    box-shadow:
+    0 5px 15px
+    rgba(8,127,91,.2);
+
+    transition:.2s;
+}
+
+.search-btn:hover{
+
+    transform:
+    translateY(-1px);
+
+    box-shadow:
+    0 7px 18px
+    rgba(8,127,91,.3);
+}
+
+
+/* =========================
+   OFFICIAL BUTTON
+========================= */
+
+.official-btn{
+
+    display:block;
+
+    margin-top:12px;
+
+    width:100%;
+
+    padding:14px;
+
+    border-radius:8px;
+
+    background:#343a40;
+
+    color:white;
+
+    text-decoration:none;
+
+    text-align:center;
+
+    font-size:14px;
+
+    font-weight:bold;
+}
+
+.official-btn:hover{
+
+    background:#212529;
+}
+
+
+/* =========================
+   SIDE CARDS
+========================= */
+
+.side-card{
+
+    background:white;
+
+    border-radius:14px;
+
+    padding:22px;
+
+    margin-bottom:20px;
+
+    box-shadow:
+    0 6px 25px
+    rgba(0,0,0,.07);
+}
+
+.side-card h3{
+
+    color:#087f5b;
+
+    margin-bottom:15px;
+
+    font-size:19px;
+}
+
+.side-card ul{
+
+    list-style:none;
+}
+
+.side-card li{
+
+    padding:11px 0;
+
+    border-bottom:
+    1px solid #eee;
+
+    font-size:14px;
+
+    line-height:1.6;
+}
+
+.side-card li:last-child{
+
+    border-bottom:0;
+}
+
+
+/* =========================
+   NOTICE
+========================= */
+
+.notice{
+
+    margin-top:25px;
+
+    background:#fff8e1;
+
+    border-left:
+    5px solid #f59f00;
+
+    padding:18px;
+
+    border-radius:8px;
+
+    line-height:1.8;
+
+    font-size:13px;
+
+    color:#684900;
+}
+
+
+/* =========================
+   FEATURES
+========================= */
+
+.features{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:18px;
+
+    margin-top:30px;
+}
+
+.feature{
+
+    background:white;
+
+    padding:22px;
+
+    border-radius:12px;
+
+    text-align:center;
+
+    box-shadow:
+    0 5px 18px
+    rgba(0,0,0,.06);
+}
+
+.feature-icon{
+
+    font-size:32px;
+
+    margin-bottom:10px;
+}
+
+.feature h4{
+
+    color:#087f5b;
+
+    margin-bottom:7px;
+}
+
+.feature p{
+
+    font-size:13px;
+
+    color:#777;
+
+    line-height:1.6;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer{
+
+    background:#172b24;
+
+    color:white;
+
+    margin-top:50px;
+
+    padding:35px 20px;
+}
+
+.footer-inner{
+
+    max-width:1150px;
+
+    margin:auto;
+
+    text-align:center;
+}
+
+.footer h3{
+
+    margin-bottom:8px;
+
+    color:#70d6b3;
+}
+
+.footer p{
+
+    color:#b9c5c0;
+
+    font-size:13px;
+
+    line-height:1.7;
+}
+
+.copyright{
+
+    border-top:
+    1px solid
+    rgba(255,255,255,.1);
+
+    margin-top:20px;
+
+    padding-top:20px;
+
+    color:#9ca8a3;
+
+    font-size:12px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:850px){
+
+    .content{
+
+        grid-template-columns:1fr;
+    }
+
+    .side-card{
+
+        margin-bottom:0;
+    }
+
+}
+
+@media(max-width:650px){
+
+    .top-bar-inner{
+
+        justify-content:center;
+
+        text-align:center;
+    }
+
+    .top-bar-inner span:last-child{
+
+        display:none;
+    }
+
+    .header{
+
+        padding:22px 15px;
+    }
+
+    .header-inner{
+
+        justify-content:center;
+
+        text-align:center;
+
+        flex-direction:column;
+    }
+
+    .header-text h1{
+
+        font-size:23px;
+    }
+
+    .nav-inner{
+
+        gap:20px;
+
+        flex-wrap:wrap;
+    }
+
+    .main{
+
+        margin-top:25px;
+
+        padding:0 13px;
+    }
+
+    .hero h2{
+
+        font-size:24px;
+    }
+
+    .form-grid{
+
+        grid-template-columns:1fr;
+
+        gap:0;
+    }
+
+    .form-group.full{
+
+        grid-column:auto;
+    }
+
+    .card-body{
+
+        padding:20px;
+    }
+
+    .features{
+
+        grid-template-columns:1fr;
+    }
+
+}
+
+
+/* =========================
+   LOADING
+========================= */
+
+.loading{
+
+    display:none;
+
+    position:fixed;
+
+    inset:0;
+
+    background:
+    rgba(255,255,255,.85);
+
+    z-index:9999;
+
+    align-items:center;
+
+    justify-content:center;
+
+    flex-direction:column;
+}
+
+.spinner{
+
+    width:48px;
+
+    height:48px;
+
+    border:5px solid #ddd;
+
+    border-top-color:#087f5b;
+
+    border-radius:50%;
+
+    animation:
+    spin 1s linear infinite;
+}
+
+.loading p{
+
+    margin-top:12px;
+
+    color:#087f5b;
+
+    font-weight:bold;
+}
+
+@keyframes spin{
+
+    to{
+        transform:rotate(360deg);
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- TOP BAR -->
+
+<div class="top-bar">
+
+    <div class="top-bar-inner">
+
+        <span>
+            🇧🇩 Bangladesh Education Board
+        </span>
+
+        <span>
+            SSC / Dakhil / Equivalent Examination
+        </span>
+
+    </div>
+
+</div>
+
+
+<!-- HEADER -->
+
+<header class="header">
+
+    <div class="header-inner">
+
+        <div class="logo">
+            SSC
+        </div>
+
+        <div class="header-text">
+
+            <h1>
+                SSC Result Portal
+            </h1>
+
+            <p>
+                Secondary School Certificate Examination Result 2026
+            </p>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- NAV -->
+
+<nav class="nav">
+
+    <div class="nav-inner">
+
+        <a href="index.html">
+            🏠 Home
+        </a>
+
+        <a href="#result">
+            🔍 Result
+        </a>
+
+        <a href="#instructions">
+            📖 Instructions
+        </a>
+
+        <a href="https://www.educationboardresults.gov.bd/v2/home"
+           target="_blank">
+            🏛️ Official Result
+        </a>
+
+    </div>
+
+</nav>
+
+
+<!-- MAIN -->
+
+<main class="main">
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <h2>
+            SSC Result 2026
+        </h2>
+
+        <p>
+            পরীক্ষার ফলাফল দেখতে নিচের তথ্যগুলো সঠিকভাবে পূরণ করুন
+        </p>
+
+    </section>
+
+
+    <!-- CONTENT -->
+
+    <section class="content"
+             id="result">
+
+
+        <!-- SEARCH -->
+
+        <div class="card">
+
+            <div class="card-header">
+
+                <h3>
+                    🔍 ফলাফল অনুসন্ধান
+                </h3>
+
+                <p>
+                    আপনার পরীক্ষার তথ্য প্রদান করুন
+                </p>
+
+            </div>
+
+
+            <div class="card-body">
+
+
+                <div class="form-grid">
+
+
+                    <!-- EXAM -->
+
+                    <div class="form-group">
+
+                        <label for="exam">
+                            পরীক্ষার নাম
+                        </label>
+
+                        <select id="exam">
+
+                            <option value="SSC">
+                                SSC / Dakhil / Equivalent
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- YEAR -->
+
+                    <div class="form-group">
+
+                        <label for="year">
+                            পরীক্ষার বছর
+                        </label>
+
+                        <select id="year">
+
+                            <option value="2026">
+                                2026
+                            </option>
+
+                            <option value="2025">
+                                2025
+                            </option>
+
+                            <option value="2024">
+                                2024
+                            </option>
+
+                            <option value="2023">
+                                2023
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- BOARD -->
+
+                    <div class="form-group full">
+
+                        <label for="board">
+                            শিক্ষা বোর্ড
+                        </label>
+
+                        <select id="board">
+
+                            <option value="">
+                                -- শিক্ষা বোর্ড নির্বাচন করুন --
+                            </option>
+
+                            <option value="Dhaka">
+                                Dhaka
+                            </option>
+
+                            <option value="Chittagong">
+                                Chittagong
+                            </option>
+
+                            <option value="Rajshahi">
+                                Rajshahi
+                            </option>
+
+                            <option value="Comilla">
+                                Comilla
+                            </option>
+
+                            <option value="Jessore">
+                                Jessore
+                            </option>
+
+                            <option value="Barisal">
+                                Barisal
+                            </option>
+
+                            <option value="Sylhet">
+                                Sylhet
+                            </option>
+
+                            <option value="Dinajpur">
+                                Dinajpur
+                            </option>
+
+                            <option value="Mymensingh">
+                                Mymensingh
+                            </option>
+
+                            <option value="Madrasah">
+                                Madrasah
+                            </option>
+
+                            <option value="Technical">
+                                Technical
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- ROLL -->
+
+                    <div class="form-group">
+
+                        <label for="roll">
+                            রোল নম্বর
+                        </label>
+
+                        <input
+                            type="text"
+                            id="roll"
+                            inputmode="numeric"
+                            placeholder="রোল নম্বর লিখুন"
+                        >
+
+                    </div>
+
+
+                    <!-- REGISTRATION -->
+
+                    <div class="form-group">
+
+                        <label for="registration">
+                            রেজিস্ট্রেশন নম্বর
+                        </label>
+
+                        <input
+                            type="text"
+                            id="registration"
+                            inputmode="numeric"
+                            placeholder="রেজিস্ট্রেশন নম্বর লিখুন"
+                        >
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- SEARCH -->
+
+                <button
+                    class="search-btn"
+                    onclick="searchResult()">
+
+                    🔍 ফলাফল দেখুন
+
+                </button>
+
+
+                <!-- OFFICIAL -->
+
+                <a
+                    href="https://www.educationboardresults.gov.bd/v2/home"
+                    target="_blank"
+                    class="official-btn">
+
+                    🏛️ Official Education Board Result
+
+                </a>
+
+
+            </div>
+
+        </div>
+
+
+        <!-- SIDE -->
+
+        <aside>
+
+
+            <div class="side-card"
+                 id="instructions">
+
+                <h3>
+                    📌 নির্দেশনা
+                </h3>
+
+                <ul>
+
+                    <li>
+                        ✓ পরীক্ষার নাম নির্বাচন করুন
+                    </li>
+
+                    <li>
+                        ✓ সঠিক পরীক্ষার বছর নির্বাচন করুন
+                    </li>
+
+                    <li>
+                        ✓ আপনার শিক্ষা বোর্ড নির্বাচন করুন
+                    </li>
+
+                    <li>
+                        ✓ রোল নম্বর লিখুন
+                    </li>
+
+                    <li>
+                        ✓ রেজিস্ট্রেশন নম্বর লিখুন
+                    </li>
+
+                    <li>
+                        ✓ তারপর ফলাফল দেখুন বাটনে চাপুন
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="side-card">
+
+                <h3>
+                    ℹ️ গুরুত্বপূর্ণ
+                </h3>
+
+                <p style="
+                    font-size:13px;
+                    line-height:1.8;
+                    color:#666;
+                ">
+
+                    ফলাফল দেখার সময় আপনার
+                    রোল ও রেজিস্ট্রেশন নম্বর
+                    সঠিকভাবে প্রদান করুন।
+
+                </p>
+
+            </div>
+
+
+        </aside>
+
+
+    </section>
+
+
+    <!-- NOTICE -->
+
+    <div class="notice">
+
+        <strong>
+            ⚠️ নোট:
+        </strong>
+
+        এই ওয়েবসাইটের বর্তমান Marksheet অংশ
+        Demo interface হিসেবে তৈরি করা হয়েছে।
+        সরকারি ফলাফল দেখানোর জন্য অনুমোদিত
+        API বা বৈধ ফলাফল ডেটা সোর্স প্রয়োজন।
+
+    </div>
+
+
+    <!-- FEATURES -->
+
+    <section class="features">
+
+
+        <div class="feature">
+
+            <div class="feature-icon">
+                🔍
+            </div>
+
+            <h4>
+                Result Search
+            </h4>
+
+            <p>
+                রোল ও রেজিস্ট্রেশন নম্বর দিয়ে
+                ফলাফল অনুসন্ধান।
+            </p>
+
+        </div>
+
+
+        <div class="feature">
+
+            <div class="feature-icon">
+                📊
+            </div>
+
+            <h4>
+                Marksheet
+            </h4>
+
+            <p>
+                Subject-wise grade এবং GPA
+                সহ ফলাফল প্রদর্শন।
+            </p>
+
+        </div>
+
+
+        <div class="feature">
+
+            <div class="feature-icon">
+                🖨️
+            </div>
+
+            <h4>
+                Print / PDF
+            </h4>
+
+            <p>
+                ফলাফল Print অথবা PDF হিসেবে
+                সংরক্ষণের সুবিধা।
+            </p>
+
+        </div>
+
+
+    </section>
+
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+    <div class="footer-inner">
+
+        <h3>
+            SSC Result Portal
+        </h3>
+
+        <p>
+            Secondary School Certificate Examination
+            Result Portal
+        </p>
+
+        <p>
+            Designed for educational result viewing.
+        </p>
+
+        <div class="copyright">
+
+            © 2026 SSC Result Portal.
+            All Rights Reserved.
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- LOADING -->
+
+<div class="loading"
+     id="loading">
+
+    <div class="spinner"></div>
+
+    <p>
+        ফলাফল খোঁজা হচ্ছে...
+    </p>
+
+</div>
+
+
+<script>
+
+function searchResult(){
+
+    const exam =
+        document.getElementById("exam").value;
+
+    const year =
+        document.getElementById("year").value;
+
+    const board =
+        document.getElementById("board").value;
+
+    const roll =
+        document.getElementById("roll")
+        .value.trim();
+
+    const registration =
+        document.getElementById("registration")
+        .value.trim();
+
+
+    /* BOARD */
+
+    if(!board){
+
+        alert(
+            "দয়া করে শিক্ষা বোর্ড নির্বাচন করুন।"
+        );
+
+        return;
+    }
+
+
+    /* ROLL */
+
+    if(!roll){
+
+        alert(
+            "দয়া করে রোল নম্বর লিখুন।"
+        );
+
+        return;
+    }
+
+
+    /* REGISTRATION */
+
+    if(!registration){
+
+        alert(
+            "দয়া করে রেজিস্ট্রেশন নম্বর লিখুন।"
+        );
+
+        return;
+    }
+
+
+    /* NUMBER VALIDATION */
+
+    if(!/^[0-9]+$/.test(roll)){
+
+        alert(
+            "রোল নম্বর শুধুমাত্র সংখ্যা হতে হবে।"
+        );
+
+        return;
+    }
+
+
+    if(!/^[0-9]+$/.test(registration)){
+
+        alert(
+            "রেজিস্ট্রেশন নম্বর শুধুমাত্র সংখ্যা হতে হবে।"
+        );
+
+        return;
+    }
+
+
+    /* LOADING */
+
+    document.getElementById("loading")
+    .style.display="flex";
+
+
+    /* RESULT URL */
+
+    const url =
+        "result.html" +
+        "?exam=" +
+        encodeURIComponent(exam) +
+
+        "&year=" +
+        encodeURIComponent(year) +
+
+        "&board=" +
+        encodeURIComponent(board) +
+
+        "&roll=" +
+        encodeURIComponent(roll) +
+
+        "&registration=" +
+        encodeURIComponent(registration);
+
+
+    setTimeout(function(){
+
+        window.location.href=url;
+
+    },700);
+
+}
+
+</script>
+
+
+</body>
+  </html>
